@@ -1,6 +1,6 @@
 package com.cultivation.javaBasic.showYourIntelligence;
 
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+//import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.*;
 
@@ -35,12 +35,15 @@ class DistinctIterator<E> implements Iterator<E> {
 
     @Override
     public boolean hasNext() {
-        throw new NotImplementedException();
+        if(iterator.hasNext()){
+            return true;
+        }
+        return false;
     }
 
     @Override
     public E next() {
-        throw new NotImplementedException();
+        return iterator.next();
     }
     // --end->
 }
